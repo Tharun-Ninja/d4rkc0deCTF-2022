@@ -1,7 +1,7 @@
 # Misc
 ### Despair
 
-<img src="./images/despair_challenge.png"  width="400" height="500">
+<img src="./images/despair_challenge.png"  width="450" height="500">
 
 ##### Category
 Misc
@@ -19,7 +19,7 @@ Open the audio in an audio editor, I have used Audacity here
 
 ##### WorkFlow
 In this audio form we can see the main music is on the top and there is a slight noise at the bottom!!
-Looks interesting !?><^&%^*>
+Looks interesting !!! <br>
 Let's open this audio in spectrogram mode
 Follow the steps to do that
 

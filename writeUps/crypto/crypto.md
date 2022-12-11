@@ -56,7 +56,6 @@ When we try to read the same note:
 
 ![read_note.png](./images/read_note.png)
 
-If we notice mine is the 60th note, that means many people have created note in this and the first note (ie. note no.1) should be the developer's note. So we have to try to read note number: 1
 
 Let's take a deep dive into the read note function in [notes.py](./notes.py)
 
@@ -100,7 +99,7 @@ def readNote(count):
 
 
 In the read note function a `count` parameter is passed, and its been checked if it is equal to 1, so the flag must be in note no. 1, then the script is checking if the `len(ciphertext) % len(key) == 0` 
-therefore we have tor the right key length that is divides the length of ciphertext
+therefore we have to input the right key length that is divides the length of ciphertext
 
 ![check_key_len.png](./images/check_key_len.png)
 
@@ -129,7 +128,7 @@ Let's tryyyyy it out.
 
 ![first_letter.png](./images/first_letter.png)
 
-yesss! Amazing work. so now we know that the length of ciphertext is 70 so the length of the flag must we 35 since ciphertext is ascii. So we can brute force the characters XORing the ciphertext and `d4rkc0de` or `d4rk{}c0de` with the factors of 35. Let's try 5 letters next.
+yesss! Amazing work. so now we know that the length of ciphertext is 70 so the length of the flag must be 35 since ciphertext is ascii. So we can brute force the characters XORing the ciphertext and `d4rkc0de` or `d4rk{}c0de` with the factors of 35. Let's try 5 letters next.
 
 1st letter
 ```
