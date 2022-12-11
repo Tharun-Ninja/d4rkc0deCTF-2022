@@ -2,7 +2,7 @@
 ### data ⊄ data + more data
 
 <img src="./images/challenge.png"  width="400" height="400">
----
+
 ##### Category
 Forensics
 ##### Points
