@@ -1,7 +1,7 @@
 # Forensics
 ### data ⊄ data + more data
 
-![challenge.png](./images/challenge.png)
+<img src="./images/challenge.png"  width="100" height="100">
 ---
 ##### Category
 Forensics
