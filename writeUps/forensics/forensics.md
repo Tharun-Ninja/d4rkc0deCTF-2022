@@ -1,7 +1,7 @@
 # Forensics
 ### data ⊄ data + more data
 
-<img src="./images/challenge.png"  width="500" height="500">
+<img src="./images/challenge.png"  width="400" height="500">
 
 ##### Category
 Forensics
@@ -55,6 +55,4 @@ we got the flag in the png file
 ![b.png](./images/b.png)
 
 ##### Flag
-```
-d4rkc0de{hehehe_e4sy_fl4g_ag4iN}
-```
+`d4rkc0de{hehehe_e4sy_fl4g_ag4iN}`

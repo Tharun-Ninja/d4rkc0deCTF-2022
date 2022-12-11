@@ -1,7 +1,7 @@
 # Misc
 ### Despair
 
-<img src="./images/despair_challenge.png"  width="500" height="500">
+<img src="./images/despair_challenge.png"  width="400" height="500">
 
 ##### Category
 Misc
@@ -42,6 +42,4 @@ Its written
 Yayyy!! we found the flag as the visual representation of the audio form
 
 ##### Flag
-```
-d4rkc0de{esp4d4_no_m0r3}
-```
+`d4rkc0de{esp4d4_no_m0r3}`
