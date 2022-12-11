@@ -3,20 +3,20 @@
 
 <img src="./images/challenge.png"  width="450" height="500">
 
-##### Category
+#### Category
 Forensics
-##### Points
+#### Points
 146 Points
-##### Challenge Description
+#### Challenge Description
 What if you delete more data?
-##### Attached Files
+#### Attached Files
 [photu.png](./photu.png)
-##### Explanation
+#### Explanation
 There is a file [photu.png](./photu.png). We have to find the flag in the photo.
 
 ![photo.png](./images/photu.png)
 
-##### WorkFlow
+#### WorkFlow
 Since the Challenge description talks about the data, we will try to cat the image first
 ```
 cat photu.png
@@ -56,5 +56,5 @@ we got the flag in the png file
 
 ![b.png](./images/b.png)
 
-##### Flag
+#### Flag
 `d4rkc0de{hehehe_e4sy_fl4g_ag4iN}`

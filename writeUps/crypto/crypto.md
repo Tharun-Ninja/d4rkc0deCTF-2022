@@ -3,22 +3,22 @@
 
 <img src="./images/crypto_challenge.png"  width="450" height="500">
 
-##### Category
+#### Category
 Crypto
 
-##### Points
+#### Points
 125 Points
 
-##### Challenge Description
+#### Challenge Description
 We've made this secure notes app for you to store your notes. Without the key for the note, you can't decrypt it. Even if you try, you'll be only met with disappointment (and some gibberish text idk). To prove how secure this is, the first thing I did was to hide my own flag. Can you get it? I bet not.
 
-##### Attached Files
+#### Attached Files
 [notes.py](./notes.py)
 
-##### Server
+#### Server
 `nc 192.168.1.250 20005`
 
-##### Explanation
+#### Explanation
 Let's try to understand the python script:
 ```
 MENU = """
@@ -107,7 +107,7 @@ therefore we have to input the right key length that is divides the length of ci
 If we see the decrypt function it is just using XORing the ciphertext with the key
 - XOR: A binary operation that takes two strings, converts them to binary, and for each corrosponding digit pair, returns 0 if both digits are 0 or 1, and returns 1 if one of the digits is 0 and the other is 1.
 
-##### Exploitation
+#### Exploitation
 This can be done by XORing the given ciphertext with each charachter of the flag. (Why? Search up "Properties of XOR" on Google). Since we know the format of our flag `d4rkc0de{}` or `d4rk{}c0de`, and
 from the script output of the first note we come to know the `ciphertext: 0a471e5748682b2e342337531e461259343f7b2137574d025143667d6c2b3e054d084e`, Lets start XORing.... <br>
 We have to convert `0a` to bits and XOR it with the bits of `d`
@@ -187,5 +187,5 @@ Now read note no.1 with this key
 Voila! It works!
 With the key we found we are now able to decrypt the ciphertext
 
-##### Flag
+#### Flag
 `d4rk{bl0ck_x0r1ng!=3ncrypt10nz}c0de`
