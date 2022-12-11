@@ -57,12 +57,13 @@ When we try to read the same note:
 ![read_note.png](./images/read_note.png)
 
 
-Let's take a deep dive into the read note function in [notes.py](./notes.py)
+Let's take a deep dive into the readNote function in [notes.py](./notes.py)
 
 ```
 def nexify(hexx):
     return "".join([chr(int(hexx[i : i + 2], 16)) for i in range(0, len(hexx), 2)])
-
+```
+```
 def decrypt(ciphertext, key):
     block = key
     plaintext = ""
@@ -71,7 +72,8 @@ def decrypt(ciphertext, key):
             plaintext += chr(ord(ciphertext[i * len(key) + j]) ^ ord(block[j]))
         block = ciphertext[i * len(key) : (i + 1) * len(key)]
     return plaintext
-
+```
+```
 def readNote(count):
     key = input("Enter key to decrypt the note: ")
     with open(str(count) + ".txt", "r") as f:
@@ -97,8 +99,7 @@ def readNote(count):
 ```
 
 
-
-In the read note function a `count` parameter is passed, and its been checked if it is equal to 1, so the flag must be in note no. 1, then the script is checking if the `len(ciphertext) % len(key) == 0` 
+The readNote function takes a `count` parameter, and the file with the count number is opened. its being checked if count is equal to 1, so the flag must be in note no. 1, then the script is checking if the `len(ciphertext) % len(key) == 0` 
 therefore we have to input the right key length that is divides the length of ciphertext
 
 ![check_key_len.png](./images/check_key_len.png)
@@ -108,7 +109,7 @@ If we see the decrypt function it is just using XORing the ciphertext with the k
 
 ##### Exploitation
 This can be done by XORing the given ciphertext with each charachter of the flag. (Why? Search up "Properties of XOR" on Google). Since we know the format of our flag `d4rkc0de{}` or `d4rk{}c0de`, and
-from the script output of the first note we come to know the `ciphertext: 0a471e5748682b2e342337531e461259343f7b2137574d025143667d6c2b3e054d084e`
+from the script output of the first note we come to know the `ciphertext: 0a471e5748682b2e342337531e461259343f7b2137574d025143667d6c2b3e054d084e`, Lets start XORing.... <br>
 We have to convert `0a` to bits and XOR it with the bits of `d`
 Follow the ASCII chart: 
 
