@@ -1,7 +1,7 @@
 # Crypto
 ### Notes
 
-<img src="./images/crypto_challenge.png"  width="400" height="500">
+<img src="./images/crypto_challenge.png"  width="450" height="500">
 
 ##### Category
 Crypto
