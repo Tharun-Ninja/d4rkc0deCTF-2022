@@ -43,7 +43,7 @@ when we go through the text hoorayy!! we can find 2 text asking to delete that. 
 LC_ALL=C sed 's/maybe_you_should_delete_this_text_too//' photu.png > a.png
 ```
 ```
-sed 's/maybe_you_should_delete_this_text//' a.png > b.png
+LC_ALL=C sed 's/maybe_you_should_delete_this_text//' a.png > b.png
 ```
 ![sed.png](./images/sed.png)
 
