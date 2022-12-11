@@ -36,8 +36,8 @@ strings photu.png
 
 when we go through the text hoorayy!! we can find 2 text asking to delete that. look at the pics attached below.
 
-![text_1](./images/lead_1.png)
-![text_1](./images/lead_2.png)
+![text_1](./images/leads_1.png)
+![text_1](./images/leads_2.png)
 
 ```
 LC_ALL=C sed 's/maybe_you_should_delete_this_text_too//' photu.png > a.png
